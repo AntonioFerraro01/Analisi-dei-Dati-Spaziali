@@ -20,7 +20,7 @@ Incidenti_Stradali = read_excel("File/Dataset_Incidenti_Stradali.xlsx")
 View(Incidenti_Stradali)
 attach(Incidenti_Stradali)
 
-path=file.choose()
+path=file.choose() # QUI BISOGNA CARICARE IL FILE .shp ALL'INTERNO DELLA CARTELLA "File"
 path
 shp=st_read(path)
 mapview(shp)
